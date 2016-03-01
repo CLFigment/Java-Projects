@@ -1,0 +1,31 @@
+DOG**
+import java.util.*;
+
+public class Dog extends Animal  {
+	
+	private Dog[] thelist = new Dog[5];
+	private int i = 0;
+	
+	public void add(Dog d){
+		if(i<thelist.length){
+			thelist[i] = d;
+			System.out.println("Dog added at index " + i);
+			i++;
+		}
+	}
+	
+}
+
+APPLES**
+public class apples {
+	public static void main(String args[]){
+		
+		AnimalList al = new AnimalList();
+		Animal d = new Dog();
+		Animal f = new Fish();
+		al.add(d);
+		al.add(f);
+		
+	}
+}
+
